@@ -1,8 +1,4 @@
-/*@Purpose :Taking 3 Integers find the maximum
- *Use Integer Object and compareTo method to test the maximum number 
- * @file : Maximum Using Generics
- * @author : Akshay Kumar
- */
+
 package com.blz.maximumgenerics;
 
 import java.util.Arrays;
@@ -10,19 +6,12 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 public class Maximum {
-	/*
-	 * @Purpose : Creating MaxNumber Constructor using Steam Function From Util
-	 * Package And Generics With Integer And CompareTo
-	 * 
-	 * @param : Stream Function With Integer As Generics
-	 */
+	
 	public int maxNumber(Stream<Integer> stream) {
 		return stream.max(Integer::compareTo).get();
 	}
 
-	/*
-	 * @Purpose :Taking 3 Inputs From User Getting Maximum Value Among Three
-	 */
+	
 	public static void main(String[] args) {
 
 		Maximum maximum = new Maximum();
