@@ -5,19 +5,12 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 public class Maximum {
-	/*
-	 * @Purpose : Creating MaxNumber Constructor using Steam Function From Util
-	 * Package And Generics With Float And CompareTo
-	 * 
-	 * @param : Stream Function With Float As Generics
-	 */
+	
 	public Float maxFloat(Stream<Float> stream) {
 		return stream.max(Float::compareTo).get();
 	}
 
-	/*
-	 * @Purpose :Taking 3 Inputs From User Getting Maximum Value Among Three
-	 */
+	
 	public static void main(String[] args) {
 
 		Maximum maximum = new Maximum();
